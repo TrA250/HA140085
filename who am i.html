@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>About me</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https/maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->:/
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!--  Font links -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+<!-- Navbar here -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">Tr.A</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT ME</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORKS</a>
+      <a href="#footer" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+
+
+
+<body style="background-color: #202020;">
+  <style type="text/css">
+     .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #ccffff;
+    }
+
+
+    .button1{
+      display: inline-block;
+      font-size: 20px;
+      font-family: fira sans;
+      text-decoration: none;
+      color: #ccffff;
+      border: #f4ffff 2px solid;
+      width: 420px;
+      padding: 10px 20px;
+      border-radius: 0px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background-color ease 500ms;
+      background-color: transparent;
+    }
+    .button1:hover{
+      background-color: rgb(0,0,0, 0.55);
+    }
+
+    .button0{
+      width: 310px;
+      height: 310px;
+      text-align: center;
+      font-family: Fira sans light;
+      font-size: 24pt;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 0px;
+      padding: 10px 20px;
+    }
+
+    .button2{
+      display: inline-block;
+      font-size: 20px;
+      font-family: fira sans;
+      text-decoration: none;
+      color: #ccffff;
+      border: #f4ffff 1px solid;
+      width: 420px;
+      padding: 10px 20px;
+      border-radius: 0px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background-color ease 500ms;
+      background-color: transparent;
+    }
+    .button2:hover{
+      background-color: rgb(51,51,51);
+    }
+    hr{
+      position: absolute;
+      width: 30px;
+      height: 0px;
+      left: 50%;
+      top: 913px;
+      color: #ccffff;
+      border: 1px solid #ccffff;
+      transform: rotate(90deg);
+    }
+    h3{
+      font-size: 42px; 
+      font-family: 'Fira sans', cursive; 
+      font-weight: 300;
+      color: #ccffff;
+
+    }
+    p{
+      font-family: 'Fira sans'; 
+      color: #f4ffff; 
+      font-size: 18pt; 
+      line-height: 1.4;
+      font-weight: 250;
+      
+    }
+    
+
+
+
+    .social-menu ul {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    .social-menu ul li {
+        list-style: none;
+        margin: 0 10px;
+    }
+    .social-menu ul li .fa {
+        color: #000000;
+        font-size: 25px;
+        line-height: 50px;
+        transition: .5s;
+    }
+    .social-menu ul li .fa:hover {
+        color: #336699;
+    }
+    .social-menu ul li a {
+        position: relative;
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 0%;
+        background-color: white;
+        text-align: center;
+        transition: 0.5s;
+        transform: translate(0,0px);
+        box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+    }
+    .social-menu ul li a:hover {
+        transform: rotate(0deg) skew(0deg) translate(0, -10px);
+    }
+    .social-menu ul li:nth-child(1) a:hover {
+        background-color: #ccffff;
+    }
+    .social-menu ul li:nth-child(2) a:hover {
+        background-color: #ccffff;
+    }
+    .social-menu ul li:nth-child(3) a:hover {
+        background-color: #ccffff;
+    }
+    .social-menu ul li:nth-child(4) a:hover {
+        background-color: #ccffff;
+    }
+    .social-menu ul li:nth-child(5) a:hover {
+        background-color: #ccffff;
+    }
+
+
+   </style>
+
+
+
+
+
+
+
+<!-- Banner part -->
+<section style="background: rgb(0, 0, 0, 0.40) url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Vincent_van_Gogh_-_Wheatfield_under_thunderclouds_-_Google_Art_Project.jpg/1920px-Vincent_van_Gogh_-_Wheatfield_under_thunderclouds_-_Google_Art_Project.jpg'); 
+    background-size: cover; 
+    background-position:center ; 
+    width: 100%; 
+    height: 250px;
+    background-blend-mode: darken;">
+  <div class="container">
+    <h3 style="
+        position: relative;
+        margin-top: 100px; 
+        color: #f4ffff;">
+      About me
+    </h3>
+</section>
+
+
+
+<!-- text wall part -->
+<section style="width: 1000px; margin: auto; ">
+  <div style="margin-top: 80px; margin-bottom:80px;margin-left: 70px; margin-right: 70px ">
+    <h3 style="font-size: 50pt; color: #ccffff;">
+      Hi
+    </h3>
+    <br><br>
+    <p style="line-height: 1.4;">
+      Trung Anh is my name, and i'm trying my best to be a designer. I maybe don't have much work but i'm alway pround of what i have done so far, it's not much but it is honest work. You cant check more of my work through social media below
+      <br><br>
+    </p>
+    <h3>
+      About my style
+    </h3>
+    
+    <p>
+      I really love simple things. But that does not mean that i like 'bland' design. Simplicity to me does not mean removing everything unnecessary. It's about finding a nice balance so the user or the viewer can know what is going on and the designer or artist can express the feeling
+      <br>
+      Simple as that
+    </p>
+    <br><br>
+    <h3>
+      About this subject (WDT401)
+    </h3>
+    <p>
+      To be honest, i really did not expect to code like a deverloper and there was a little uncomfort. Afterall, i choosed to study graphic design not software engineer <br><br>
+      But coding has it's charm. That feeling of something ACTUALLY WORK is very different. Plus, this whole experience really teach me what a Developer (someone all the designer has to work with in the future) want and need from a designer. This subject also taught me how to 'hunt' the skill and knowlegde that may come handy. <br><br>
+      So, what can i say about this subject? This is a fun experience. But not fun enough to make me want to learn more
+    </p>
+    <br><br>
+    <p style="text-align: right;">
+      Thank you for spending your time
+    </p>
+  </div>
+</section>
+
+
+
+
+<!-- Footer part -->
+<section style="background: #303030; margin-bottom: ;: -361px">
+  <br><br><br>
+  <h2 style="font-size: 24pt ; font-family: fira sans; text-align: center; color: #f4ffff;" id="footer">
+    This is the Portfolio of Dao Trung Anh
+  </h2>
+  <br>
+  <p style="font-size: 14pt; text-align: center;color: #f4ffff; line-height: 1.5; ">
+    ID: HA140085  -  Batch: GD1405
+    <br>
+    Below are my socialmedia, feel free to tell me what you think about my works
+  </p>
+
+  <div class="container" style="align-self: center;">
+    
+
+  
+
+ <div class="social-menu" style="margin-top: 50px;margin-left: 715px; margin-right: 715px;">
+  <ul>
+    <li><a href="https://www.facebook.com/profile.php?id=100018133066702"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="https://www.instagram.com/lazy.t.520/"><i class="fa fa-instagram"></i></a></li>
+    <li><a href="https://www.behance.net/godnoob"><i class="fa fa-behance"></i></a></li>
+  </ul>
+</div>
+</div>
+    
+
+  <br><br>
+</section>
+</body>
+</html>
